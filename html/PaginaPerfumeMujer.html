@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Lociones</title>
+    <link rel="stylesheet" href="../css/PaginaPerfumesMujer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<script> function handleSelectChange(event) { var selectedValue = event.target.value; if (selectedValue !== "") { window.location.href = selectedValue; } } </script>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="menu">
+      <img src="../img/Logo con Tipografi╠üa para Iniciales del Nombre Profesional Circular Limpio Elegante Blanco Negro (2).png" alt="Logo de Maria Lociones" class="logo">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../html/PaginaPerfumeHombre.html">Perfume Mujer</a></li>
+          <li><a href="../html/PaginaPerfumeHombre.html">Perfume Hombre</a></li>
+          <li><a href="../html/PaginaCuidado.html">Cuidado Personal</a></li>
+          <label for="opciones">Cuenta:   </label> 
+                    <select id="opciones" name="opciones" onchange="handleSelectChange(event)">
+                         <option value="">Selecciona una opción</option> 
+                         <option value="./RegistroUsuario.html">Regístrese</option> 
+                         <option value="./iniciosesion.html">Inicia Sesión</option>
+                    </select>
+        </ul>
+      </nav>
+    </div>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <form class="d-flex w-100">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrito de compras -->
+    <div class="text-end my-3">
+        <a href="../html/CarritoPagina.html">
+            <img src="../img/carritoboton.png" alt="Carrito" class="carrito-img">
+        </a>
+    </div>
+
+    
+
+    <!-- Nuevas Fragancias -->
+    <h2 class="text-center my-5">Fragancias Inolvidables</h2>
+    <div class="container">
+        <div class="row">
+            <!-- Product Cards -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../img/PerfumeEsikaMia.png" class="card-img-top producto-img" alt="Dorsay">
+                    <div class="card-body">
+                        <h5 class="card-title">Mia</h5>
+                        <p class="card-text">Ésika</p>
+                        <p class="price">$50.000</p>
+                        <a href="../html/CarritoPagina.html" class="btn btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../img/PerfumeAlma.png" class="card-img-top producto-img" alt="Dorsay">
+                    <div class="card-body">
+                        <h5 class="card-title">Alma</h5>
+                        <p class="card-text">Ésika</p>
+                        <p class="price">$90.000</p>
+                        <a href="../html/CarritoPagina.html" class="btn btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../img/PerfumeEsika.png" class="card-img-top producto-img" alt="Dorsay">
+                    <div class="card-body">
+                        <h5 class="card-title">Vibranza</h5>
+                        <p class="card-text">Ésika</p>
+                        <p class="price">$50.000</p>
+                        <a href="../Maria lociones/carrito.html" class="btn btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../img/PerfumeYabal.png" class="card-img-top producto-img" alt="Dorsay">
+                    <div class="card-body">
+                        <h5 class="card-title">Gouttes Sensuelles</h5>
+                        <p class="card-text">Yanbal</p>
+                        <p class="price">$100.000</p>
+                        <a href="../Maria lociones/carrito.html" class="btn btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../img/PerfumeNaturaKaiak.png" class="card-img-top producto-img" alt="Dorsay">
+                    <div class="card-body">
+                        <h5 class="card-title">Kaiak</h5>
+                        <p class="card-text">Natural</p>
+                        <p class="price">$70.000</p>
+                        <a href="../Maria lociones/carrito.html" class="btn btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../img/Perfumetoday.png" class="card-img-top producto-img" alt="Dorsay">
+                    <div class="card-body">
+                        <h5 class="card-title">Today</h5>
+                        <p class="card-text">Ésika</p>
+                        <p class="price">$50.000</p>
+                        <a href="../Maria lociones/carrito.html" class="btn btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container" style="margin-left: 100px;">
+          <div class="footer-links">
+            <h4>Compañía</h4>
+            <ul>
+              <li><a href="./PaginasdeNosotros.html">Nosotros</a></li>
+              <li><a href="./PaginaPolitica.html">Política de Privacidad</a></li>
+              <li><a href="./Paginadeterminos.html">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+          <div class="footer-links" style="margin-right: 100px;">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="./PaginasPreguntas.html">Preguntas</a></li>
+              <li><a href="./PaginaEnvios.html">Envíos</a></li>
+              <li><a href="./Paginaformapago.html">Formas de Pago</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="social-link" style="margin-top: -50px;">
+            <li><a href="./PaginaContacto.html" style="margin-top: -100px;text-decoration: none;color: whitesmoke;">Contacto</a></li><br>
+          <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </footer>
+</body>
+
+</html>
+

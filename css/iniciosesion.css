@@ -1,0 +1,108 @@
+/* Reset de márgenes y padding */
+* {
+  font-family: 'Poppins', sans-serif; /* Fuente general */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo degradado */
+.background-gradient {
+  background-color: #f4f4f4; /* Color de fondo claro */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor del formulario */
+.login-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Títulos */
+.login-container h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+}
+.login-container p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Estilo de entradas */
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+.input-container i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #888;
+}
+.input-container input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+.input-container input:focus {
+  border-color: #ff758c;
+  outline: none;
+}
+
+/* Botón de envío */
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff758c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+  background-color: #ff5673;
+}
+
+/* Enlaces */
+.forgot-password,
+.register-link {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ff758c;
+  text-decoration: none;
+}
+.forgot-password:hover,
+.register-link:hover {
+  color: #ff5673;
+}

@@ -1,0 +1,286 @@
+/* Reset de márgenes y padding */
+* {
+    font-family: 'Poppins', sans-serif; /* Fuente general */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el header */
+header {
+    background-color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #800000;
+}
+
+/* Barra de búsqueda */
+.navbar {
+    background-color: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.form-control {
+    border-radius: 30px;
+}
+
+.btn-outline-success {
+    border-radius: 30px;
+    color: #ffffff;
+    background-color: #28a745;
+}
+
+.btn-outline-success:hover {
+    background-color: #218838;
+}
+
+/* Carrito de compras */
+.carrito-img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.btn-danger {
+    background-color: #e74a3b;
+    border-color: #e74a3b;
+}
+
+.btn-danger:hover {
+    background-color: #c93e2e;
+}
+
+/* Marcas */
+.marca-logo {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.marca-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Productos */
+/* Estilo general del contenedor de los productos */
+.container-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo de cada tarjeta */
+.card {
+    flex: 1;
+    margin: 15px;
+    max-width: 300px; /* Limita el tamaño máximo de cada tarjeta */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra sutil */
+    overflow: hidden; /* Asegura que las imágenes no se desborden fuera de la tarjeta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de animación al hacer hover */
+}
+
+/* Efecto de hover para las tarjetas */
+.card:hover {
+    transform: translateY(-5px); /* Mueve ligeramente la tarjeta hacia arriba */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+}
+
+/* Estilo de la imagen en la parte superior de la tarjeta */
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Fija una altura para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    border-radius: 10px; /* Bordes redondeados en la parte superior de la tarjeta */
+}
+
+/* Ajuste de las imágenes dentro de las tarjetas */
+.producto-img {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho disponible */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio sin distorsión */
+    border-radius: 10px; /* Da bordes redondeados a las imágenes */
+}
+
+/* Estilo del contenido dentro de la tarjeta */
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Título del producto */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Descripción del producto */
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Estilo del botón dentro de la tarjeta */
+.btn {
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto de hover para el botón */
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de las imágenes en el carrito */
+.carrito-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Agregar espaciado entre los elementos dentro del contenedor de productos */
+.container-items .card {
+    flex: 1;
+    margin: 15px;
+    max-width: 300px; /* Limita el tamaño máximo de cada tarjeta */
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .container-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+}
+
+footer .footer-links h4 {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-links ul li {
+    margin-bottom: 8px;
+}
+
+footer .footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links ul li a:hover {
+    color: #f39c12;
+}
+
+footer .social-link {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-link .social-icon {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+footer .social-link .social-icon:hover {
+    color: #f39c12;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .order-summary, .order-form {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

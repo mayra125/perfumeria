@@ -1,0 +1,118 @@
+/* Fondo para la página */
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente general */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa; /* Color de fondo */
+}
+
+/* Fondo con imagen */
+.background-container {
+    background-color: #f4f4f4; /* Color de fondo claro */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    width: 400px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombras suaves */
+    border-radius: 15px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Títulos */
+.form-container h1 {
+    font-size: 32px;
+    color: #333; /* Texto oscuro */
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.form-container label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #555; /* Gris oscuro */
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Campos de entrada */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="tel"] {
+    width: 100%;
+    padding: 12px 12px 12px 40px; /* Igual que el diseño propuesto */
+    margin: 8px 0 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Color neutral */
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.form-container input:focus {
+    border-color: #ff758c; /* Rosa vibrante */
+    outline: none;
+}
+
+/* Estilo para el botón */
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff758c; /* Rosa vibrante */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white; /* Texto blanco */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #ff5673; /* Rosa más oscuro */
+}
+
+/* Estilo para enlaces */
+.form-container a.link {
+    display: block;
+    margin-top: 15px;
+    color: #ff758c; /* Rosa vibrante */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-container a.link:hover {
+    color: #ff5673; /* Rosa más oscuro */
+    text-decoration: underline;
+}
+
+/* Checkbox */
+.form-container label input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}

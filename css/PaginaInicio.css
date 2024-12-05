@@ -1,0 +1,250 @@
+/* Reset de márgenes y padding */
+* {
+    font-family: 'Poppins', sans-serif; /* Fuente general */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el header */
+header {
+    background-color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff758c;
+}
+
+/* Barra de búsqueda */
+.navbar {
+    background-color: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.form-control {
+    border-radius: 30px;
+}
+
+.btn-outline-success {
+    border-radius: 30px;
+    color: #ffffff;
+    background-color: #ff7eb3;
+}
+
+.btn-outline-success:hover {
+    background-color: #ff758c;
+}
+
+/* Carrito de compras */
+.carrito-img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.btn-danger {
+    background-color: #ff758c;
+    border-color: #ff758c;
+}
+
+.btn-danger:hover {
+    background-color: #ff5673;
+}
+
+/* Marcas */
+.marca-logo {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.marca-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Productos */
+/* Estilo general del contenedor de los productos */
+.container-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo de cada tarjeta */
+.card {
+    flex: 1;
+    margin: 15px;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen en la tarjeta */
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Ajuste de imágenes */
+.producto-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Contenido de las tarjetas */
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.btn {
+    margin-top: 15px;
+    background-color: #ff7eb3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff758c;
+}
+
+/* Estilo de imágenes en el carrito */
+.carrito-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+}
+
+footer .footer-links h4 {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-links ul li {
+    margin-bottom: 8px;
+}
+
+footer .footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links ul li a:hover {
+    color: #ff758c;
+}
+
+footer .social-link {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-link .social-icon {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+footer .social-link .social-icon:hover {
+    color: #ff758c;
+}
